@@ -1,7 +1,24 @@
 <div id="app">
-  <h1>Product Name</h1>
+  <h1>{{product}}</h1>
+  <!-- this called expression-->
+  <p>{{description}}</p>
+  <p>{{description+'?'}}</p>
+  <p>{{description+' '+description}}</p>
+  <p>{{description.split(' ').reverse().join('')}}</p>
 </div>
 <!-- 
     the problem here we need value from js into html
 -->
+<!-- 
+  development version, includes helpful console warnings
+  https://vuejs.org/v2/guide/
+-->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="main.js"></script>
+<!--
+  in console:
+
+  app.product="helal"
+
+  vuejs is reactivity system
+-->
